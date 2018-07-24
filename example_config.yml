@@ -1,0 +1,22 @@
+---
+# generate data for all metrics containing string "usable_capacity"
+- filter: "usable_capacity"
+  generators:
+    # simply use constant value 100GB
+    - name: constant
+      # 100GB
+      value: 104857600
+
+# generate data for all metrics containing string "used_capacity"
+# but not containing string "volume_beta"
+- filter: "used_capacity !volume_beta"
+  generators:
+    # generate linear grow from 0GB to 90GB
+    - name: linear
+      # from 0GB
+      value_a: 0
+      # to 90GB
+      value_b: 94371840
+    # add some noise to the generated value (maximal 5% of the generated value)
+    - name: noise
+      percent: 5
