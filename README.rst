@@ -5,6 +5,8 @@
 This repository contains python scripts for generating mock data for
 `Tendrl`_ - Grafana Dashboards.
 
+Inspired by `carbon-random`_ script.
+
 Example usage
 -------------
 
@@ -101,4 +103,5 @@ Distributed under the terms of the `Apache License 2.0`_ license.
 
 
 .. _`Tendrl`: http://tendrl.org/
+.. _`carbon-random`: https://github.com/cloudbehl/carbon-random
 .. _`Apache License 2.0`: http://www.apache.org/licenses/LICENSE-2.0
