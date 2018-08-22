@@ -46,7 +46,7 @@ def parse_args(args=None, namespace=None):
     parser.add_argument( \
         "-s", "--server", metavar='HOSTNAME',
         required=False, default="localhost",
-        help="Hostname/IP address of carbon and graphite server. " \
+        help="Hostname/IP address of carbon and grafana server. " \
             "(default: localhost)")
     parser.add_argument( \
         "--carbon-port", metavar='PORT',
